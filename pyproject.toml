@@ -1,0 +1,33 @@
+[project]
+name = "email-assistant-mcp"
+version = "0.1.0"
+description = "FastMCP-based email personal assistant server"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    { name = "Emilio del Giudice", email = "emilio.delgiudice@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "fastmcp>=2.13.3",
+    "google-auth-oauthlib>=1.2.0",
+    "cachetools>=5.3.0",
+]
+
+[project.scripts]
+email-assistant-mcp = "email_assistant_mcp:main"
+email-assistant-config = "email_assistant_mcp.config_cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatchling.build.targets.wheel]
+packages = ["email_assistant_mcp"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+    "pytest-cov>=6.0.0",
+    "pytest-mock>=3.15.1",
+]

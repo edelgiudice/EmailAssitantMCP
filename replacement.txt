@@ -1,0 +1,4 @@
+# Replace occurrences of Freewheel in content (case-insensitive)
+regex:(?i)edelgiudice@freewheel\.tv==>emilio.delgiudice@gmail.com
+regex:(?i)freewheel\.tv==>REDACTED
+regex:(?i)freewheel==>REDACTED
