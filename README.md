@@ -41,7 +41,7 @@ This launches Google's OAuth consent screen, captures the refresh token, and sto
 
 ### 3. Launch the server
 
-**For Claude Desktop (stdio transport):**
+**For Desktop Clients (stdio transport):**
 ```bash
 uv run email-assistant-mcp --transport stdio
 ```
