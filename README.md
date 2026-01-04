@@ -118,6 +118,7 @@ Configure logging via environment variables:
 
 - `EMAIL_ASSISTANT_LOG_FILE` - path to log file (default: `~/.email_assistant_mcp/logs/server.log`)
 - `EMAIL_ASSISTANT_LOG_LEVEL` - log level (default: `INFO`)
+- `EMAIL_ASSISTANT_LOG_FORMAT` - output format: `text` or `json` (default: `text`)
 
 Logs automatically redact sensitive data (email addresses, tokens, passwords).
 
